@@ -18,7 +18,7 @@ To create the web server:<br>
     2. Modify app.py to deploy S3 buket (uncomment line "S3CreateProject(app, "S3CreateProject", env=env_dev)")<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy"<br>
     3. From root of project copy html file to S3<br>
-&nbsp;&nbsp;&nbsp;-  aws s3 cp index.html s3://<<your bucket name>>/index.html<br>
+&nbsp;&nbsp;&nbsp;-  aws s3 cp index.html s3://"<<your bucket name>>"/index.html<br>
     4. Modify app.py to deploy VPC (uncomment line "CustomVpcStack(app, "CustomVpcStack", env=env_dev)")<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy CustomVpcStack --require-approval never"<br>
 &nbsp;&nbsp;&nbsp;- This can take a while to deploy<br>
