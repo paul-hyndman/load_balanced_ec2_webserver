@@ -1,10 +1,9 @@
-# A demo project illustrating how to deploy an AWS EC2 web server behind an ALB/ASG using Python CDK.
+# A demo project illustrating how to deploy a load balanced AWS EC2 web server using Python CDK.
 # Project creates AWS artifacts:
 #  - VPC
-#  - EC2
+#  - EC2 (EC2, ALB, ASG, Target group, Launch Config)
 #  - S3
 # User data to launch Apache webserver with custom index.html page is loaded from S3 bucket
-# This is a load balanced version of https://github.com/paul-hyndman/cdk-ec2-webserver-on-vpc
 
 Requirements:
  - A command shell such as Git Bash
@@ -29,5 +28,5 @@ To create the web server:<br>
 &nbsp;&nbsp;&nbsp;- Modify class CustomEc2Stack to use ID of VPC created in step #4<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy CustomEc2Stack --require-approval never"<br>
     7.  Find IP address of new EC2, and plug into browser such as http://<<ip address><br>
-&nbsp;&nbsp;&nbsp;- The custom index.html page will display if all went well, available at http://<<your ALB public DNS>>/<br>
+&nbsp;&nbsp;&nbsp;- The custom index.html page will display if all went well<br>
 &nbsp;&nbsp;&nbsp;- It may take a couple minutes for apache to recognize/load the html page<br>
