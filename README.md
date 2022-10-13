@@ -28,6 +28,6 @@ To create the web server:<br>
     6. Modify app.py to deploy EC2 (uncomment line "CustomVpcStack(app, "CustomVpcStack", env=env_dev)"<br>
 &nbsp;&nbsp;&nbsp;- Modify class CustomEc2Stack to use ID of VPC created in step #4<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy CustomEc2Stack --require-approval never"<br>
-    7.  Find IP address of new EC2, and plug into browser such as http://<<ip address><br>
+    7.  Find IP address of new EC2, and plug into browser such as http://"your ip address"<br>
 &nbsp;&nbsp;&nbsp;- The custom index.html page will display if all went well<br>
 &nbsp;&nbsp;&nbsp;- It may take a couple minutes for apache to recognize/load the html page<br>
