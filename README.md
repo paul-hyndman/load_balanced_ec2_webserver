@@ -6,6 +6,7 @@
 # User data to launch Apache webserver with custom index.html page is loaded from S3 bucket
 
 Requirements:
+ - A private AWS account
  - A command shell such as Git Bash
  - Python
  - CDK
