@@ -24,7 +24,7 @@ To create the web server:<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy CustomVpcStack --require-approval never"<br>
 &nbsp;&nbsp;&nbsp;- This can take a while to deploy<br>
     5. Verifying deploy of VPC on AWS console<br>
-&nbsp;&nbsp;&nbsp;- From AWS console you can find it via VPC->You VPCs<br>
+&nbsp;&nbsp;&nbsp;- From AWS console you can find it via VPC->Your VPCs<br>
     6. Modify app.py to deploy EC2 (uncomment line "CustomVpcStack(app, "CustomVpcStack", env=env_dev)"<br>
 &nbsp;&nbsp;&nbsp;- Modify class CustomEc2Stack to use ID of VPC created in step #4<br>
 &nbsp;&nbsp;&nbsp;- From project root run "cdk init" to check for errors, then "cdk deploy CustomEc2Stack --require-approval never"<br>
